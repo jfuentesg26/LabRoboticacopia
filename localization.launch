@@ -1,0 +1,7 @@
+<launch>
+
+
+<node pkg="tercerlab" name="mainnode" type="principalnode.py" output="screen" />
+<node pkg="tercerlab" name="graphicnode" type="graphicnode.py" output = "screen"/>
+<include file="$(find sound_play)/soundplay_node.launch" />
+</launch>
